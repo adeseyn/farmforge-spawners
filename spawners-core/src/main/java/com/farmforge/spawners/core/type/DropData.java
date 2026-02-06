@@ -5,5 +5,5 @@ public record DropData(
         int baseValue,
         int maxValue
 ) {
-    
+
 }
