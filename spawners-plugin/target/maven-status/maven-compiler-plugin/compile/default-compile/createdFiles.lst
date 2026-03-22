@@ -1,1 +1,12 @@
-com\farmforge\spawners\App.class
+com\farmforge\spawners\plugin\adapters\BukkitPositionAdapter.class
+com\farmforge\spawners\plugin\listeners\SpawnerBreakListener.class
+com\farmforge\spawners\plugin\adapters\BukkitSpawnerTypeAdapter.class
+com\farmforge\spawners\plugin\adapters\CollectResultAdapter.class
+com\farmforge\spawners\plugin\commands\GiveSpawnerCommand.class
+com\farmforge\spawners\plugin\listeners\SpawnerPlaceListener.class
+com\farmforge\spawners\plugin\commands\SpawnerUpgradeCommand.class
+com\farmforge\spawners\plugin\SpawnerItemUtil.class
+com\farmforge\spawners\plugin\SpawnerItemFactory.class
+com\farmforge\spawners\plugin\SpawnerTypeRegistrar.class
+com\farmforge\spawners\plugin\listeners\SpawnerInteractListener.class
+com\farmforge\spawners\plugin\SpawnersFF.class

@@ -1,23 +1,12 @@
 package com.farmforge.spawners.core.internal.upgrade;
 
-public class ValueUpgrade implements UpgradeDefinition{
-    @Override
-    public String getId() {
-        return "";
-    }
+import com.farmforge.spawners.core.Spawner;
+import com.farmforge.spawners.core.stats.SpawnerStats;
 
+public class ValueUpgrade implements UpgradeMethod{
     @Override
-    public int getMaxLevel() {
-        return 0;
-    }
-
-    @Override
-    public UpgradeTarget getTarget() {
-        return null;
-    }
-
-    @Override
-    public int evaluate(int baseValue, int level) {
-        return 0;
+    public int upgrade(Spawner spawner) throws UpgradeException {
+        SpawnerStats stats = spawner.getStats();
+        return stats.incrementValue();
     }
 }

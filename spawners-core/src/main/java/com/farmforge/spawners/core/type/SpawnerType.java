@@ -1,10 +1,15 @@
 package com.farmforge.spawners.core.type;
 
-public class SpawnerType {
-    private String id;
-    private String entityType;
-    private DropData dropData;
-    private SpawnData spawnData;
-    private PresentationData presentationData;
-    private CostData costData;
+public interface SpawnerType {
+    String getId();
+    String getSpawnerName();
+    long getCost();
+    long getUpgradeCost();
+    String getBlockType();
+    int getPriority();
+
+    String getDropName();
+    String getDropType();
+    long getBaseDropValue();
+
 }
