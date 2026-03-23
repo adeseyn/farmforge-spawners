@@ -1,6 +1,6 @@
 package com.farmforge.spawners.plugin.adapters;
 
-import com.farmforge.spawners.core.SpawnerPosition;
+import com.farmforge.spawners.core.api.SpawnerPosition;
 import org.bukkit.Location;
 
 public class BukkitPositionAdapter {

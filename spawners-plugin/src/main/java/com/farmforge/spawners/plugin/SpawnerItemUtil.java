@@ -1,8 +1,8 @@
 package com.farmforge.spawners.plugin;
 
-import com.farmforge.spawners.core.tier.SpawnerTier;
-import com.farmforge.spawners.core.type.SpawnerType;
-import com.farmforge.spawners.core.type.SpawnerTypeRegistry;
+import com.farmforge.spawners.core.api.tier.SpawnerTier;
+import com.farmforge.spawners.core.api.type.SpawnerType;
+import com.farmforge.spawners.core.api.type.SpawnerTypeRegistry;
 import com.farmforge.spawners.plugin.adapters.BukkitSpawnerTypeAdapter;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;

@@ -1,21 +1,17 @@
 package com.farmforge.spawners.plugin.listeners;
 
-import com.farmforge.spawners.core.CollectResult;
-import com.farmforge.spawners.core.Spawner;
-import com.farmforge.spawners.core.SpawnerFacade;
-import com.farmforge.spawners.core.SpawnerPosition;
-import com.farmforge.spawners.core.internal.upgrade.UpgradeResult;
-import com.farmforge.spawners.core.internal.upgrade.UpgradeTarget;
+import com.farmforge.spawners.core.api.CollectResult;
+import com.farmforge.spawners.core.api.Spawner;
+import com.farmforge.spawners.core.api.SpawnerFacade;
+import com.farmforge.spawners.core.api.SpawnerPosition;
 import com.farmforge.spawners.plugin.SpawnerItemUtil;
 import com.farmforge.spawners.plugin.adapters.BukkitPositionAdapter;
 import com.farmforge.spawners.plugin.SpawnerItemFactory;
-import com.farmforge.spawners.plugin.adapters.BukkitSpawnerTypeAdapter;
 import com.farmforge.spawners.plugin.adapters.CollectResultAdapter;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.event.ClickEvent;
 import net.kyori.adventure.text.event.HoverEvent;
 import org.bukkit.Material;
-import org.bukkit.World;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -83,6 +79,8 @@ public class SpawnerInteractListener implements Listener {
 
             // upgrade = regular right click
             if (action == Action.RIGHT_CLICK_BLOCK) {
+                facade.canOpenUpgradeMenu(spawner, playerId);
+
                 int spawnerId = spawner.getId();
 
                 e.getPlayer().sendMessage(Component.text("Choose an upgrade:"));
@@ -127,8 +125,8 @@ public class SpawnerInteractListener implements Listener {
             }
 
         } catch (Exception ex) {
-            ex.printStackTrace();
             player.sendMessage(ex.getMessage());
+
         }
     }
 }

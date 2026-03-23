@@ -1,24 +1,21 @@
 package com.farmforge.spawners.plugin;
 
-import com.farmforge.spawners.core.Spawner;
-import com.farmforge.spawners.core.SpawnerRepository;
+import com.farmforge.spawners.core.api.Spawner;
+import com.farmforge.spawners.core.api.SpawnerFacade;
 import org.bukkit.inventory.ItemStack;
 
 public class SpawnerItemFactory {
 
-    private final SpawnerRepository repo;
+    private final SpawnerFacade facade;
     private final SpawnerItemUtil itemUtil;
 
-    public SpawnerItemFactory(SpawnerRepository repo, SpawnerItemUtil itemUtil) {
-        this.repo = repo;
+    public SpawnerItemFactory(SpawnerFacade facade, SpawnerItemUtil itemUtil) {
+        this.facade = facade;
         this.itemUtil = itemUtil;
     }
 
     public ItemStack createExistingItem(int spawnerId) {
-        Spawner spawner = repo.findById(spawnerId);
-        if (spawner == null) {
-            throw new IllegalArgumentException("Unknown spawner id: " + spawnerId);
-        }
+        Spawner spawner = facade.getSpawner(spawnerId);
 
         return itemUtil.createExistingItem(
                 spawner.getId(),

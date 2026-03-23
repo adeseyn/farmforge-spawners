@@ -1,10 +1,10 @@
 package com.farmforge.spawners.plugin.listeners;
 
-import com.farmforge.spawners.core.SpawnerPosition;
+import com.farmforge.spawners.core.api.SpawnerPosition;
 import com.farmforge.spawners.plugin.SpawnerItemUtil;
 import com.farmforge.spawners.plugin.adapters.BukkitPositionAdapter;
-import com.farmforge.spawners.core.SpawnerFacade;
-import com.farmforge.spawners.core.tier.SpawnerTier;
+import com.farmforge.spawners.core.api.SpawnerFacade;
+import com.farmforge.spawners.core.api.tier.SpawnerTier;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockPlaceEvent;

@@ -1,8 +1,8 @@
 package com.farmforge.spawners.plugin.commands;
 
-import com.farmforge.spawners.core.SpawnerFacade;
-import com.farmforge.spawners.core.internal.upgrade.UpgradeResult;
-import com.farmforge.spawners.core.internal.upgrade.UpgradeTarget;
+import com.farmforge.spawners.core.api.SpawnerFacade;
+import com.farmforge.spawners.core.api.upgrade.UpgradeResult;
+import com.farmforge.spawners.core.api.upgrade.UpgradeTarget;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;

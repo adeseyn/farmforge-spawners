@@ -1,7 +1,10 @@
 package com.farmforge.spawners.core.internal.upgrade;
 
-import com.farmforge.spawners.core.Spawner;
-import com.farmforge.spawners.core.SpawnerRepository;
+import com.farmforge.spawners.core.api.Spawner;
+import com.farmforge.spawners.core.api.SpawnerRepository;
+import com.farmforge.spawners.core.api.upgrade.UpgradeException;
+import com.farmforge.spawners.core.api.upgrade.UpgradeResult;
+import com.farmforge.spawners.core.api.upgrade.UpgradeTarget;
 
 public class UpgradeService {
     private final SpawnerRepository repository;

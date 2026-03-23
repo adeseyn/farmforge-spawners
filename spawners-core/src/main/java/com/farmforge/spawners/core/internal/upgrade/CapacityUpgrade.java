@@ -1,7 +1,8 @@
 package com.farmforge.spawners.core.internal.upgrade;
 
-import com.farmforge.spawners.core.Spawner;
-import com.farmforge.spawners.core.stats.SpawnerStats;
+import com.farmforge.spawners.core.api.Spawner;
+import com.farmforge.spawners.core.api.upgrade.UpgradeException;
+import com.farmforge.spawners.core.api.stats.SpawnerStats;
 
 public class CapacityUpgrade implements UpgradeMethod{
     @Override

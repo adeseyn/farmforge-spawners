@@ -1,6 +1,6 @@
 package com.farmforge.spawners.plugin.adapters;
 
-import com.farmforge.spawners.core.type.SpawnerType;
+import com.farmforge.spawners.core.api.type.SpawnerType;
 import org.bukkit.Material;
 
 public class BukkitSpawnerTypeAdapter {

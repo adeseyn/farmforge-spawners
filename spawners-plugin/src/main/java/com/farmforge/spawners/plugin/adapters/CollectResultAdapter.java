@@ -1,6 +1,6 @@
 package com.farmforge.spawners.plugin.adapters;
 
-import com.farmforge.spawners.core.CollectResult;
+import com.farmforge.spawners.core.api.CollectResult;
 import com.farmforge.spawners.plugin.SpawnerItemUtil;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;

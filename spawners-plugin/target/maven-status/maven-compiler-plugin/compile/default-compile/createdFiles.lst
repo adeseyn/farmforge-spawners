@@ -9,4 +9,5 @@ com\farmforge\spawners\plugin\SpawnerItemUtil.class
 com\farmforge\spawners\plugin\SpawnerItemFactory.class
 com\farmforge\spawners\plugin\SpawnerTypeRegistrar.class
 com\farmforge\spawners\plugin\listeners\SpawnerInteractListener.class
+com\farmforge\spawners\plugin\SimpleEconomy.class
 com\farmforge\spawners\plugin\SpawnersFF.class
