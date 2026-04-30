@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/farmforge-spawners.iml" filepath="$PROJECT_DIR$/farmforge-spawners.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spawners-core/spawners-core.iml" filepath="$PROJECT_DIR$/spawners-core/spawners-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spawners-plugin/spawners-plugin.iml" filepath="$PROJECT_DIR$/spawners-plugin/spawners-plugin.iml" />
+    </modules>
+  </component>
+</project>
